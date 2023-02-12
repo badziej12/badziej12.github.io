@@ -1,0 +1,83 @@
+@media screen and (min-width: 900px) and (orientation: portrait) {
+    html {
+        font-size: 14px;
+    }
+
+    .icons-con img {
+        margin: 0 6%;
+    }
+
+
+
+    .icons-con img {
+        height: 55px;
+        width: 55px;
+    }
+
+    .button-con img {
+        width: 60px;
+        height: 60px;
+    }
+
+    section.about {
+        padding-top: 100px;
+    }
+
+    .skill {
+        margin: 3vh auto;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .lang-block {
+
+        display: block;
+        float: left;
+        width: 55%;
+    }
+
+    .lang-icons {
+        position: relative;
+        top: -3%;
+        left: 3%;
+    }
+
+    .skills-block {
+        float: right;
+        width: 45%;
+    }
+
+    .skills-con {
+        position: relative;
+        top: 38px;
+    }
+
+    .lang-icons img {
+        position: absolute;
+    }
+
+    .services {
+        left: 8%;
+    }
+
+    .postgresql {
+        top: calc(40% + 5px);
+        left: -8%;
+    }
+
+    .graphql {
+        left: 95px;
+        bottom: -30px;
+    }
+
+    .python {
+        top: calc(40% + 5px);
+        right: -5px;
+    }
+
+    .lang-block {
+        margin-top: 50px;
+    }
+
+}

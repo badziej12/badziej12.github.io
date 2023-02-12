@@ -1,0 +1,44 @@
+@media screen and (min-width: 410px) {
+    html {
+        font-size: 10px;
+    }
+
+    .dropdown-content h3 {
+        line-height: 90px;
+    }
+
+    .dropdown-bar {
+        height: 70px;
+    }
+
+    .dropdown-btn {
+        right: 20px;
+    }
+
+    .dropdown-btn h3 {
+        line-height: 70px;
+    }
+
+    .dropdown-content {
+        top: 70px;
+    }
+
+    .welcome {
+        top: 15vh;
+        padding: 0 5%;
+    }
+
+    .icons-con img {
+        margin: 0 5%;
+    }
+
+    .button-con img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .description {
+        margin-bottom: 5vh;
+    }
+
+}

@@ -1,0 +1,112 @@
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+    html {
+        font-size: 14px;
+    }
+
+    .desktop-clearfix::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+
+    .desktop ul li p {
+        text-align: center;
+        margin: 0 20%;
+        text-transform: uppercase;
+        line-height: 100px;
+        color: white;
+    }
+
+    /* header {
+        padding: 0 10%;
+    } */
+
+    .icons-con {
+        width: 100%;
+
+    }
+
+    .icons-con img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .button-con {
+        width: 90%;
+    }
+
+    .button-con img {
+        height: 70px;
+        width: 70px;
+    }
+
+    section.about {
+        padding-top: 140px;
+    }
+
+    .description {
+        float: left;
+        width: 55%;
+        text-align: left;
+    }
+
+    .lang-block {
+        float: none;
+        width: 100%;
+        height: auto;
+        min-height: auto;
+    }
+
+    .lang-icons {
+        position: relative;
+        height: 220px;
+        max-width: none;
+        min-width: none;
+        max-height: none;
+        width: 100%;
+        top: auto;
+        left: auto;
+    }
+
+    .lang-icons img {
+        position: absolute;
+    }
+
+    .services {
+        top: -30px;
+        left: 0;
+    }
+
+
+    .postgresql {
+        top: auto;
+        left: auto;
+        right: 25%;
+    }
+
+    .graphql {
+        left: auto;
+        right: -15px;
+        bottom: auto;
+    }
+
+    .python {
+        top: auto;
+        right: auto;
+        left: 33%;
+    }
+
+    .skills-con {
+        margin-right: 0;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    section.about {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+}

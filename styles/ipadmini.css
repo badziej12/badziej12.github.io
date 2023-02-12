@@ -1,0 +1,59 @@
+@media screen and (min-width: 744px) and (orientation: portrait) {
+
+    nav.mobile {
+        display: none;
+    }
+
+    .description h3 {
+        margin-bottom: 30px;
+    }
+
+
+    .welcome {
+        padding: 0 6%;
+    }
+
+    .icons-con {
+        bottom: 12vh;
+    }
+
+    .icons-con img {
+        margin: 6%;
+    }
+
+    .button-con {
+        bottom: 6vh;
+    }
+
+    section.about {
+        padding-top: 90px;
+        min-height: 960px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 744px) {
+    html {
+        font-size: 12px;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+
+    .skills-con {
+        max-width: 418px;
+        padding-bottom: 1vh;
+    }
+
+    .skills-con h3 {
+        line-height: 80px;
+    }
+
+    .bar {
+        height: 15px;
+        top: 8px;
+    }
+}
