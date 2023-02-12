@@ -174,7 +174,7 @@ section {
 .icons-con {
     position: absolute;
     bottom: 16%;
-    width: 90%;
+    width: 100%;
     text-align: center;
 }
 
@@ -190,7 +190,7 @@ section {
 
 .button-con {
     position: absolute;
-    width: 90%;
+    width: 100%;
     bottom: 3%;
     text-align: center;
 }
