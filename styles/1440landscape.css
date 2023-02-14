@@ -2,4 +2,43 @@
     html {
         font-size: 16px;
     }
+
+    .skills-con h3 {
+        line-height: 120px;
+    }
+
+    .bar {
+        top: 15px;
+    }
+
+    .description h2 {
+        margin-bottom: 60px;
+    }
+
+    .text-input {
+        height: 60px;
+    }
+
+    .text-input:nth-child(3) {
+        height: 300px;
+    }
+
+    .send-btn {
+        height: 90px;
+        line-height: 86px;
+    }
+
+    .icon img {
+        height: 50px;
+        width: 50px;
+        margin-right: 15px;
+    }
+
+    .link-icons {
+        margin-top: 130px;
+    }
+
+    footer p {
+        line-height: 70px;
+    }
 }

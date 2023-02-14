@@ -19,4 +19,12 @@
     .button-con {
         bottom: 7vh;
     }
+
+    .projects h1 {
+        margin-bottom: calc(5vh + 20px);
+    }
+
+    footer p {
+        line-height: 60px;
+    }
 }

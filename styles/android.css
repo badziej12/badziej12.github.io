@@ -31,4 +31,33 @@
     .description h3 {
         margin-bottom: 20px;
     }
+
+    section.projects,
+    section.contact {
+        padding: 80px 4%;
+    }
+
+    .icon {
+        margin-bottom: 50px;
+    }
+
+    .text-input,
+    .send-btn {
+        height: 40px;
+        margin: 38px auto;
+    }
+
+    .send-btn {
+        height: 60px;
+        line-height: 55px;
+    }
+
+    .text-input {
+        padding: 8px;
+    }
+
+    footer p {
+        line-height: 45px;
+    }
+
 }

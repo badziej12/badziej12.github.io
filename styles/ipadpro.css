@@ -7,6 +7,10 @@
         margin: 0 6%;
     }
 
+    .divider h1 {
+        line-height: 160px;
+    }
+
 
 
     .icons-con img {
@@ -53,6 +57,7 @@
         top: 38px;
     }
 
+
     .lang-icons img {
         position: absolute;
     }
@@ -79,5 +84,16 @@
     .lang-block {
         margin-top: 50px;
     }
+
+    section.projects {
+        padding-top: 120px;
+    }
+
+    .projects .project-con {
+        float: left;
+        width: 45%;
+        margin: 0 2.5%;
+    }
+
 
 }
