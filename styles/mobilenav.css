@@ -1,0 +1,44 @@
+@media only screen and (orientation: portrait) {
+    nav.mobile {
+        display: block;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .hidden {
+        height: 0;
+    }
+
+
+
+    .dropdown-bar,
+    .dropdown-btn {
+        transition: .3s ease-out;
+        transition-delay: 0.3s;
+        overflow: hidden;
+    }
+
+
+
+    .dropdown-content {
+        transform-origin: top;
+        transition: .3s ease-in-out;
+        height: 0;
+        overflow: hidden;
+    }
+
+
+    .mobile .opacity-bg {
+        opacity: 0;
+        transition: .3s;
+    }
+
+    .opacity-bg.opacity-on {
+        opacity: 1;
+    }
+
+    .rollout {
+        height: auto;
+    }
+
+}

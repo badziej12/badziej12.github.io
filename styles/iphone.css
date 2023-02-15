@@ -23,6 +23,10 @@
         top: 70px;
     }
 
+    .dropdown-content.active {
+        height: 364px;
+    }
+
     .welcome {
         top: 15vh;
         padding: 0 5%;
@@ -54,6 +58,11 @@
         padding-top: 100px;
         padding-bottom: 80px;
     }
+
+    section.contact {
+        padding-bottom: 20px;
+    }
+
 
     .form-con {
         margin-bottom: 60px;

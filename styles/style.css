@@ -7,6 +7,7 @@
 html {
     font-size: 8px;
     font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -22,6 +23,9 @@ html {
     display: block;
 }
 
+.dropdown-content.active {
+    height: 284px;
+}
 
 h1,
 header p {
@@ -58,6 +62,7 @@ nav.mobile {
     position: fixed;
     z-index: 2;
     width: 100%;
+    transition: .3s;
 }
 
 .dropdown-bar {
@@ -106,6 +111,7 @@ nav.mobile {
     text-transform: uppercase;
     margin: 0 3%;
     border-bottom: 1px solid black;
+    cursor: pointer;
 }
 
 .dropdown-content h3:last-child {
@@ -127,14 +133,35 @@ nav.desktop {
     float: left;
     list-style: none;
     width: 25%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.desktop ul li:hover {
+    border-bottom: 1px solid white;
+}
+
+.desktop.active ul li:hover {
+    background-color: white;
+    border: none;
+}
+
+.desktop.active ul li:hover p {
+    color: black;
+}
+
+.desktop ul li:hover p {
+    transition: .3s;
 }
 
 .desktop ul li p {
     text-align: center;
     margin: 0 20%;
     text-transform: uppercase;
-    line-height: 80px;
+    line-height: 60px;
     color: white;
+    font-weight: 300;
+    transition: 0.2s;
 }
 
 
@@ -179,7 +206,7 @@ section {
 
 .icons-con {
     position: absolute;
-    bottom: calc(18% + 40px);
+    bottom: calc(18vh + 70px);
     width: 100%;
     text-align: center;
 }
@@ -197,7 +224,7 @@ section {
 .button-con {
     position: absolute;
     width: 100%;
-    bottom: calc(4% + 30px);
+    bottom: calc(4vh + 40px);
     text-align: center;
 }
 
@@ -396,6 +423,7 @@ section.projects {
 section.contact {
     background-color: #47606A;
     height: auto;
+    padding-bottom: 20px;
 }
 
 .form-con {

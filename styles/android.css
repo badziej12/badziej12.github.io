@@ -37,6 +37,10 @@
         padding: 80px 4%;
     }
 
+    section.contact {
+        padding-bottom: 20px;
+    }
+
     .icon {
         margin-bottom: 50px;
     }

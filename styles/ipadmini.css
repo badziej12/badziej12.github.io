@@ -13,22 +13,45 @@
         padding: 0 6%;
     }
 
-    .icons-con {
-        bottom: 12vh;
-    }
 
     .icons-con img {
-        margin: 6%;
+        margin: 0 6%;
+        width: 60px;
+        height: 60px;
+        border-radius: 25%;
     }
 
-    .button-con {
-        bottom: 6vh;
-    }
 
     section.about {
         padding-top: 100px;
         min-height: 960px;
     }
+
+    .dropdown-content h3 {
+        line-height: 100px;
+    }
+
+    .dropdown-bar {
+        height: 80px;
+    }
+
+    .dropdown-btn img {
+        width: 15px;
+        height: 20px;
+    }
+
+    .dropdown-btn h3 {
+        line-height: 80px;
+    }
+
+    .dropdown-content {
+        top: 80px;
+    }
+
+    .dropdown-content.active {
+        height: 404px;
+    }
+
 
 
 

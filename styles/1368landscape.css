@@ -3,6 +3,10 @@
         font-size: 14px;
     }
 
+    .desktop.active {
+        height: 90px;
+    }
+
     .desktop-clearfix::after {
         display: block;
         content: "";
@@ -13,7 +17,7 @@
         text-align: center;
         margin: 0 20%;
         text-transform: uppercase;
-        line-height: 100px;
+        line-height: 90px;
         color: white;
     }
 
@@ -36,7 +40,7 @@
     }
 
     .button-con {
-        width: 90%;
+        width: 100%;
     }
 
     .button-con img {
