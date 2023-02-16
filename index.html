@@ -24,7 +24,29 @@
     <script src="js/mobiledropdown.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="js/desktopdropdown.js"></script>
-    <script src="js/skillbar.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('gQYPTv76a2YYXpypm');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
     <title>Błażej Tondel - Web developer</title>
 </head>
 
@@ -68,10 +90,18 @@
                 <h2>Web developer</h2>
             </div>
             <div class="icons-con">
-                <img src="img/facebook-square-mono.svg" alt="Facebook icon">
-                <img src="img/github-square-mono.svg" alt="Github icon">
-                <img src="img/linkedin-square-mono.svg" alt="Linkedin icon">
-                <img src="img/google-square-mono.svg" alt="Google icon">
+                <a href="https://www.facebook.com/profile.php?id=100071401167015">
+                    <img src="img/facebook-square-mono.svg" alt="Facebook icon">
+                </a>
+                <a href="https://github.com/badziej12">
+                    <img href="https://github.com/badziej12" src="img/github-square-mono.svg" alt="Github icon">
+                </a>
+                <a href="https://www.linkedin.com/in/b%C5%82a%C5%BCej-tondel-44844b23a/">
+                    <img src="img/linkedin-square-mono.svg" alt="Linkedin icon">
+                </a>
+                <a href="">
+                    <img src="img/google-square-mono.svg" alt="Google icon">
+                </a>
             </div>
             <div class="button-con">
                 <img onclick="scrollToElement(document.querySelector('section.about'))" src="img/Down button.svg"
@@ -155,10 +185,12 @@
                 <h1>Moje projekty</h1>
                 <div class="clearfix">
                     <div class="project-con">
-                        <div class="project">
-                            <div class="image lech-system"></div>
-                            <h1>Lech-system</h1>
-                        </div>
+                        <a href="http://www.lechsystem.pl/">
+                            <div class="project">
+                                <div class="image lech-system"></div>
+                                <h1>Lech-system</h1>
+                            </div>
+                        </a>
                         <div class="project-description">
                             <p>Jest to moja pierwsza strona wizytówkowa wykonana dla firmy LECH-SYSTEM. Właściciel
                                 poprosił
@@ -170,10 +202,12 @@
                         </div>
                     </div>
                     <div class="project-con">
-                        <div class="project">
-                            <div class="image familybudget"></div>
-                            <h1>FamilyBudget</h1>
-                        </div>
+                        <a href="https://github.com/badziej12/familybudgetapp2">
+                            <div class="project">
+                                <div class="image familybudget"></div>
+                                <h1>FamilyBudget</h1>
+                            </div>
+                        </a>
                         <div class="project-description">
                             <p>FamilyBudget to aplikacja wspomagająca zarządzanie budżetem domowym i osobisym. Pozwala
                                 na
@@ -188,37 +222,46 @@
         <section class="contact clearfix">
             <div class="contact-content clearfix">
                 <div class="form-con">
-                    <form action="">
-                        <input type="text" class="text-input" placeholder="Twoje imię i nazwisko" required>
-                        <input type="email" class="text-input" placeholder="Adres e-mail" required>
-                        <textarea class="text-input" placeholder="Treść wiadomości" required></textarea>
-                        <buttton class="send-btn">Wyślij wiadomość</buttton>
+                    <form id="contact-form">
+                        <input type="hidden" name="contact_number">
+                        <input type="text" name="name" class="text-input" placeholder="Twoje imię i nazwisko" required>
+                        <input type="email" name="email" class="text-input" placeholder="Adres e-mail" required>
+                        <textarea class="text-input" name="message" placeholder="Treść wiadomości" required></textarea>
+                        <buttton type="submit" class="send-btn">Wyślij wiadomość</buttton>
                     </form>
                 </div>
                 <div class="link-icons clearfix">
                     <div class="icon">
-                        <div>
-                            <img src="img/facebook-square-mono.svg" alt="Facebook">
-                            <p>Facebook.com</p>
-                        </div>
+                        <a href="https://www.facebook.com/profile.php?id=100071401167015">
+                            <div>
+                                <img src="img/facebook-square-mono.svg" alt="Facebook">
+                                <p>Facebook.com</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="icon">
-                        <div>
-                            <img src="img/linkedin-square-mono.svg" alt="Linkedin">
-                            <p>Linkedin.com</p>
-                        </div>
+                        <a href="https://www.linkedin.com/in/b%C5%82a%C5%BCej-tondel-44844b23a/">
+                            <div>
+                                <img src="img/linkedin-square-mono.svg" alt="Linkedin">
+                                <p>Linkedin.com</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="icon">
-                        <div>
-                            <img src="img/github-square-mono.svg" alt="Github">
-                            <p>Github.com</p>
-                        </div>
+                        <a href="https://github.com/badziej12">
+                            <div>
+                                <img src="img/github-square-mono.svg" alt="Github">
+                                <p>Github.com</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="icon">
-                        <div>
-                            <img src="img/google-square-mono.svg" alt="Google">
-                            <p>Google.com</p>
-                        </div>
+                        <a href="">
+                            <div>
+                                <img src="img/google-square-mono.svg" alt="Google">
+                                <p>Google.com</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -281,6 +324,8 @@
     scrollTrigger('.bar-fill', {
         rootMargin: '-50px'
     });
+
+
 </script>
 
 </html>

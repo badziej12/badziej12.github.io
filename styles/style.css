@@ -168,7 +168,7 @@ nav.desktop {
 
 header {
     height: 100vh;
-    background-image: url('../img/boat-5889919.png');
+    background-image: url('../img/boat-5889919\ \(1\).svg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -490,7 +490,7 @@ section.contact {
     outline: none;
 }
 
-.text-input:nth-child(3) {
+.text-input:nth-child(4) {
     height: 200px;
 }
 
