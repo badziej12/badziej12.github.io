@@ -239,6 +239,7 @@ section {
     margin-bottom: 10px;
 }
 
+
 section.about {
     background-color: #D7F3FF;
     height: auto;
@@ -310,11 +311,6 @@ section.about {
     font-family: 'Oswald', sans-serif;
 }
 
-.skill span {
-    position: relative;
-    display: inline-block;
-    top: -2.5px;
-}
 
 .bar {
     position: relative;
@@ -325,6 +321,34 @@ section.about {
     border-radius: 10px;
     border: 1px solid black;
 }
+
+.bar-fill {
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+    width: 0px;
+}
+
+.bar-fill.html {
+    max-width: 100%;
+}
+
+.bar-fill.css {
+    max-width: 90%;
+}
+
+.bar-fill.js {
+    max-width: 60%;
+}
+
+.bar-fill.python {
+    max-width: 70%;
+}
+
+.bar-fill.sql {
+    max-width: 30%;
+}
+
 
 section.projects {
     background-color: #06547A;

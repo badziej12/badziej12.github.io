@@ -24,6 +24,7 @@
     <script src="js/mobiledropdown.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="js/desktopdropdown.js"></script>
+    <script src="js/skillbar.js"></script>
     <title>Błażej Tondel - Web developer</title>
 </head>
 
@@ -78,138 +79,208 @@
             </div>
         </div>
     </header>
-    <section class="about">
-        <div class="wrapper clearfix">
-            <div class="desktop-clearfix">
-                <div class="description">
-                    <h2>O mnie</h2>
-                    <p>Jestem studentem Politechniki Wrocławskiej i aktualnie kończę kierunek Teleinformatyka.
-                        Programowania
-                        uczę się od pierwszych zajęć na uczelni, choć w dużej mierze ćwiczyłem sam, bądź uczęszczałem na
-                        dodatkowe kursy związane z moimi zainteresowaniami. Wybrałem web development, ponieważ mogę się
-                        tam
-                        spełnić jako artysta i jako ścisłowiec. Potrafię tworzyć responsywne strony korzystając z HTML5,
-                        CSS3 i
-                        JavaScript, a języki back-endowe, szczególnie Python, nie stanowią dla mnie problemu. Szybko się
-                        rozwijam i stale szukam nowych ścieżek, dzięki czemu mogę wybrać tą, która najbardziej mi się
-                        podoba.
-                        W wolnym czasie słucham jak i tworzę muzykę. Zajmuję się też obrabianiem dźwięku co sprawia mi
-                        dużą
-                        przyjemnosć.</p>
+    <main>
+        <section id="about" class="about">
+            <div class="wrapper clearfix">
+                <div class="desktop-clearfix">
+                    <div class="description">
+                        <h2>O mnie</h2>
+                        <p>Jestem studentem Politechniki Wrocławskiej i aktualnie kończę kierunek Teleinformatyka.
+                            Programowania
+                            uczę się od pierwszych zajęć na uczelni, choć w dużej mierze ćwiczyłem sam, bądź
+                            uczęszczałem na
+                            dodatkowe kursy związane z moimi zainteresowaniami. Wybrałem web development, ponieważ mogę
+                            się
+                            tam
+                            spełnić jako artysta i jako ścisłowiec. Potrafię tworzyć responsywne strony korzystając z
+                            HTML5,
+                            CSS3 i
+                            JavaScript, a języki back-endowe, szczególnie Python, nie stanowią dla mnie problemu. Szybko
+                            się
+                            rozwijam i stale szukam nowych ścieżek, dzięki czemu mogę wybrać tą, która najbardziej mi
+                            się
+                            podoba.
+                            W wolnym czasie słucham jak i tworzę muzykę. Zajmuję się też obrabianiem dźwięku co sprawia
+                            mi
+                            dużą
+                            przyjemnosć.</p>
+                    </div>
+                    <div class="skills-block">
+                        <div class="skills-con">
+                            <h3>Umiejętności</h3>
+                            <div class="skill clearfix">
+                                <p><span>HTML</span></p>
+                                <div class="bar">
+                                    <div class="bar-fill html"></div>
+                                </div>
+                            </div>
+                            <div class="skill clearfix">
+                                <p><span>CSS</span></p>
+                                <div class="bar">
+                                    <div class="bar-fill css"></div>
+                                </div>
+                            </div>
+                            <div class="skill clearfix">
+                                <p><span>JavaScript</span></p>
+                                <div class="bar">
+                                    <div class="bar-fill js"></div>
+                                </div>
+                            </div>
+                            <div class="skill clearfix">
+                                <p><span>Python</span></p>
+                                <div class="bar">
+                                    <div class="bar-fill python"></div>
+                                </div>
+                            </div>
+                            <div class="skill clearfix">
+                                <p><span>SQL</span></p>
+                                <div class="bar">
+                                    <div class="bar-fill sql"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skills-block">
-                    <div class="skills-con">
-                        <h3>Umiejętności</h3>
-                        <div class="skill clearfix">
-                            <p><span>HTML</span></p>
-                            <div class="bar"><span></span></div>
+                <div class="lang-block">
+                    <div class="lang-icons">
+                        <img class="services" src="img/services1 2.svg" alt="HTML, CSS, JS icons">
+                        <img class="postgresql" src="img/postgresql 1.svg" alt="postgreSQL icon">
+                        <img class="graphql" src="img/graphql 1.svg" alt="graphql icon">
+                        <img class="python" src="img/pyhon 1.svg" alt="Python icon">
+                    </div>
+                </div>
+        </section>
+        <section class="projects">
+            <div class="wrapper">
+                <h1>Moje projekty</h1>
+                <div class="clearfix">
+                    <div class="project-con">
+                        <div class="project">
+                            <div class="image lech-system"></div>
+                            <h1>Lech-system</h1>
                         </div>
-                        <div class="skill clearfix">
-                            <p><span>CSS</span></p>
-                            <div class="bar"><span></span></div>
+                        <div class="project-description">
+                            <p>Jest to moja pierwsza strona wizytówkowa wykonana dla firmy LECH-SYSTEM. Właściciel
+                                poprosił
+                                mnie
+                                o
+                                wykonanie prostej strony prezentujące usługi, produkty oraz ułatwiający kontakt z
+                                właścicielem a
+                                jego klientami. </p>
                         </div>
-                        <div class="skill clearfix">
-                            <p><span>JavaScript</span></p>
-                            <div class="bar"><span></span></div>
+                    </div>
+                    <div class="project-con">
+                        <div class="project">
+                            <div class="image familybudget"></div>
+                            <h1>FamilyBudget</h1>
                         </div>
-                        <div class="skill clearfix">
-                            <p><span>Python</span></p>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="skill clearfix">
-                            <p><span>SQL</span></p>
-                            <div class="bar"><span></span></div>
+                        <div class="project-description">
+                            <p>FamilyBudget to aplikacja wspomagająca zarządzanie budżetem domowym i osobisym. Pozwala
+                                na
+                                odnotowywanie transakcji i planowanie wydatków, na których podstawie generowane są ich
+                                analizy.
+                                Użytkownicy mogą łączyć się w grupy, aby wspólnie zarządzać budżetem.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="lang-block">
-                <div class="lang-icons">
-                    <img class="services" src="img/services1 2.svg" alt="HTML, CSS, JS icons">
-                    <img class="postgresql" src="img/postgresql 1.svg" alt="postgreSQL icon">
-                    <img class="graphql" src="img/graphql 1.svg" alt="graphql icon">
-                    <img class="python" src="img/pyhon 1.svg" alt="Python icon">
+        </section>
+        <section class="contact clearfix">
+            <div class="contact-content clearfix">
+                <div class="form-con">
+                    <form action="">
+                        <input type="text" class="text-input" placeholder="Twoje imię i nazwisko" required>
+                        <input type="email" class="text-input" placeholder="Adres e-mail" required>
+                        <textarea class="text-input" placeholder="Treść wiadomości" required></textarea>
+                        <buttton class="send-btn">Wyślij wiadomość</buttton>
+                    </form>
                 </div>
-            </div>
-    </section>
-    <section class="projects">
-        <div class="wrapper">
-            <h1>Moje projekty</h1>
-            <div class="clearfix">
-                <div class="project-con">
-                    <div class="project">
-                        <div class="image lech-system"></div>
-                        <h1>Lech-system</h1>
+                <div class="link-icons clearfix">
+                    <div class="icon">
+                        <div>
+                            <img src="img/facebook-square-mono.svg" alt="Facebook">
+                            <p>Facebook.com</p>
+                        </div>
                     </div>
-                    <div class="project-description">
-                        <p>Jest to moja pierwsza strona wizytówkowa wykonana dla firmy LECH-SYSTEM. Właściciel poprosił
-                            mnie
-                            o
-                            wykonanie prostej strony prezentujące usługi, produkty oraz ułatwiający kontakt z
-                            właścicielem a
-                            jego klientami. </p>
+                    <div class="icon">
+                        <div>
+                            <img src="img/linkedin-square-mono.svg" alt="Linkedin">
+                            <p>Linkedin.com</p>
+                        </div>
                     </div>
-                </div>
-                <div class="project-con">
-                    <div class="project">
-                        <div class="image familybudget"></div>
-                        <h1>FamilyBudget</h1>
+                    <div class="icon">
+                        <div>
+                            <img src="img/github-square-mono.svg" alt="Github">
+                            <p>Github.com</p>
+                        </div>
                     </div>
-                    <div class="project-description">
-                        <p>FamilyBudget to aplikacja wspomagająca zarządzanie budżetem domowym i osobisym. Pozwala na
-                            odnotowywanie transakcji i planowanie wydatków, na których podstawie generowane są ich
-                            analizy.
-                            Użytkownicy mogą łączyć się w grupy, aby wspólnie zarządzać budżetem.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact clearfix">
-        <div class="contact-content clearfix">
-            <div class="form-con">
-                <form action="">
-                    <input type="text" class="text-input" placeholder="Twoje imię i nazwisko" required>
-                    <input type="email" class="text-input" placeholder="Adres e-mail" required>
-                    <textarea class="text-input" placeholder="Treść wiadomości" required></textarea>
-                    <buttton class="send-btn">Wyślij wiadomość</buttton>
-                </form>
-            </div>
-            <div class="link-icons clearfix">
-                <div class="icon">
-                    <div>
-                        <img src="img/facebook-square-mono.svg" alt="Facebook">
-                        <p>Facebook.com</p>
-                    </div>
-                </div>
-                <div class="icon">
-                    <div>
-                        <img src="img/linkedin-square-mono.svg" alt="Linkedin">
-                        <p>Linkedin.com</p>
-                    </div>
-                </div>
-                <div class="icon">
-                    <div>
-                        <img src="img/github-square-mono.svg" alt="Github">
-                        <p>Github.com</p>
-                    </div>
-                </div>
-                <div class="icon">
-                    <div>
-                        <img src="img/google-square-mono.svg" alt="Google">
-                        <p>Google.com</p>
+                    <div class="icon">
+                        <div>
+                            <img src="img/google-square-mono.svg" alt="Google">
+                            <p>Google.com</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
         <p>&#169; 2023 Błażej Tondel</p>
     </footer>
 
 </body>
 <script>
+    function move(el) {
+        var elem = el
+        console.log(elem)
+        var width = 1;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+            }
+        }
+    }
+    function scrollTrigger(selector, options = {}) {
+        // Multiple element can have same class/selector,
+        // so we are using querySelectorAll
+        let els = document.querySelectorAll(selector);
+        console.log(els);
+        // The above `querySelectorAll` returns a nodeList,
+        // so we are converting it to an array
+        els = Array.from(els)
+        // Now we are iterating over the elements array
+        els.forEach(el => {
+            // `addObserver function` will attach the IntersectionObserver to the element
+            // We will create this function next
+            addObserver(el, options)
+        });
+    }
 
+    function addObserver(el, options) {
+        // We are creating a new IntersectionObserver instance
+        let observer = new IntersectionObserver((entries, observer) => { // This takes a callback function that receives two arguments: the elements list and the observer instance.
+            entries.forEach(entry => {
+                // `entry.isIntersecting` will be true if the element is visible
+                if (entry.isIntersecting) {
+
+                    move(el)
+                    // We are removing the observer from the element after adding the active class
+                    observer.unobserve(entry.target)
+                    console.log('wjechalo');
+                }
+            })
+        }, options)
+        // Adding the observer to the element
+        observer.observe(el)
+    }
+
+    scrollTrigger('.bar-fill', {
+        rootMargin: '-50px'
+    });
 </script>
 
 </html>

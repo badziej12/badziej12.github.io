@@ -9,7 +9,6 @@ window.addEventListener("scroll", function () {
         $("#dropdown-content").removeClass("active");
         $("#opacity").removeClass('opacity-on');
         $("nav.desktop").addClass("active");
-        console.log('jasodjasd');
     } else if (st < lastScrollTop) {
         $(".dropdown-bar").removeClass("hidden");
         $(".dropdown-btn").removeClass("hidden");
