@@ -117,9 +117,8 @@
     }
 
     .projects .project-con {
-        float: left;
-        width: 45%;
-        margin: 0 2.5%;
+        flex-basis: 45%;
+        margin: 2.5%;
     }
 
 
